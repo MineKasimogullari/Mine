@@ -157,12 +157,26 @@ namespace xoxmimm
         }
         private void yeniOyun()
         {
-         
+          //sayac = 0;
+         sayac++; // en basta sayacı arttırıp x ise kazanan o baslasın o ise x baslasın
+
+            bir.Text = " "; bir.Enabled = true; //yeni oyun için buttonlarımızın textlerini tek tek sildil ve enabled yaptık
+            iki.Text = " "; iki.Enabled = true;
+            uc.Text = " "; uc.Enabled = true;
+            dort.Text = " "; dort.Enabled = true;
+            bes.Text = " "; bes.Enabled = true;
+            alti.Text = " "; alti.Enabled = true;
+            yedi.Text = " "; yedi.Enabled = true;
+            sekiz.Text = " "; sekiz.Enabled = true;
+            dokuz.Text = " "; dokuz.Enabled = true;
+            
+            sayac++;// en sonda sayacı eski haline getirmek  için 
            
         }
         private void yeniOyunToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            yeniOyun();
+            yeniOyun(); //menustripte yeni oyuna tıklayınca fonksiyonumuzu cagırdık.
+
         
         }
 
